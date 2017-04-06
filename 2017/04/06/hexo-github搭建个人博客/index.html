@@ -5,17 +5,17 @@
   
   <title>hexo+github搭建个人博客 | Mynote</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简单介绍More info:hexo网站可设置为中文版 hexo的github 准备工作nodejs-本地下载支持windows版的nodejs（不一定需要）可以配置系统的环境变量，将nodejs加入进 github-登陆github,如果没有账号请注册 -登陆网页创建仓库(repositories)，仓库名字必须为：.github.io -本地下载git for windows客户端，可以选择其">
+  <meta name="description" content="简单介绍更多信息:-hexo网站可设置为中文版-hexo的github 准备工作">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2017/04/06/hexo-github搭建个人博客/index.html">
 <meta property="og:site_name" content="Mynote">
-<meta property="og:description" content="简单介绍More info:hexo网站可设置为中文版 hexo的github 准备工作nodejs-本地下载支持windows版的nodejs（不一定需要）可以配置系统的环境变量，将nodejs加入进 github-登陆github,如果没有账号请注册 -登陆网页创建仓库(repositories)，仓库名字必须为：.github.io -本地下载git for windows客户端，可以选择其">
-<meta property="og:updated_time" content="2017-04-06T12:16:20.373Z">
+<meta property="og:description" content="简单介绍更多信息:-hexo网站可设置为中文版-hexo的github 准备工作">
+<meta property="og:updated_time" content="2017-04-06T12:31:31.308Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
-<meta name="twitter:description" content="简单介绍More info:hexo网站可设置为中文版 hexo的github 准备工作nodejs-本地下载支持windows版的nodejs（不一定需要）可以配置系统的环境变量，将nodejs加入进 github-登陆github,如果没有账号请注册 -登陆网页创建仓库(repositories)，仓库名字必须为：.github.io -本地下载git for windows客户端，可以选择其">
+<meta name="twitter:description" content="简单介绍更多信息:-hexo网站可设置为中文版-hexo的github 准备工作">
   
     <link rel="alternate" href="/atom.xml" title="Mynote" type="application/atom+xml">
   
@@ -90,11 +90,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><p>More info:<a href="https://hexo.io" target="_blank" rel="external">hexo</a><br>网站可设置为中文版</p>
-<p><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo的github</a></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><p>-本地下载支持windows版的<a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a><br>（不一定需要）可以配置系统的环境变量，将nodejs加入进</p>
+        <h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><p>更多信息:<br>-<a href="https://hexo.io" target="_blank" rel="external">hexo</a><br>网站可设置为中文版<br>-<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo的github</a></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><a id="more"></a>
+<h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><p>-本地下载支持windows版的<a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a><br>（不一定需要）可以配置系统的环境变量，将nodejs加入进</p>
 <h3 id="github"><a href="#github" class="headerlink" title="github"></a>github</h3><p>-登陆<a href="https://github.com" target="_blank" rel="external">github</a>,如果没有账号请注册</p>
-<p>-登陆网页创建仓库(repositories)，仓库名字必须为：<username>.github.io</username></p>
+<p>-登陆网页创建仓库(repositories)，仓库名字必须为：username.github.io</p>
 <p>-本地下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">git for windows客户端</a>，可以选择其他git客户端<br>（不一定需要）可以配置系统的环境变量，将git加入进去</p>
 <p>-配置SSH key<br>使用git-bash进行操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$cd ~/.ssh #检测本机已存在的ssh密钥</div></pre></td></tr></table></figure></p>
 <p>如果提示：No such file or directory等字样，说明是第一次使用git<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ssh-keygen -t rsa -C &quot;邮箱地址&quot;</div></pre></td></tr></table></figure></p>
@@ -103,23 +103,24 @@
 <p>如果提示Are you sure you want to continue connecting(yes/no)?输入yes,回车<br>然后会提示成功配置，接着还要配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$git config --global user.name &quot;username&quot;  //github的用户名</div><div class="line">$git config --global user.email &quot;xxx@qq.com&quot; //github注册的邮箱</div></pre></td></tr></table></figure></p>
 <h2 id="使用hexo"><a href="#使用hexo" class="headerlink" title="使用hexo"></a>使用hexo</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>在nodejs与git都搭建好的环境下，打开cmd<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a><a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="external">建站</a></h3><p>完成安装后，进入一个合适的工作空间，执行下列命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$hexo init &lt;folder&gt; #对某个文件夹（工作空间）初始化</div><div class="line">$cd &lt;folder&gt; #进入该工作空间</div><div class="line">$npm install #完成初始配置</div></pre></td></tr></table></figure></p>
-<p>-<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">_config.yml</a> 网站的配置信息<br>-package.json 应用程序的信息<br>-scaffolds 模板文件夹，hexo的模板是指新建的markdown文件中默认填充的内容<br>-source 资源文件夹是存放用户资源的地方<br>-themes 主题文件夹</p>
+<p>-<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">_config.yml</a>     网站的配置信息<br>-package.json     应用程序的信息<br>-scaffolds     模板文件夹，hexo的模板是指新建的markdown文件中默认填充的内容<br>-source     资源文件夹是存放用户资源的地方<br>-themes     主题文件夹</p>
 <h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">指令</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$hexo init [folder]		#新建网站</div><div class="line">$hexo new [layout] &lt;title&gt;	#新建文章</div><div class="line">$hexo generate			#生成静态文件</div><div class="line">$hexo server			#启动服务器，访问网址：http://localhost:4000/</div></pre></td></tr></table></figure>
-<h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><p>执行命令hexo new <title>后，在source_posts\下会生成一个md文件，使用编辑器即可对该文件进行编辑，使用markdown的格式和hexo提供的标签编辑文章</title></p>
-<p>-默认生成内容有title,date,tags等<br>-<a id="more"></a>,可以隐藏文章部分内容</p>
-<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>主题：<a href="https://github.com/pinggod/hexo-theme-jekyll" target="_blank" rel="external">hexo-theme-jekyll</a>,<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a></p>
+<h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><p>执行命令后，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$hexo new &lt;title&gt;</div></pre></td></tr></table></figure></p>
+<p>在source_posts\下会生成一个md文件，使用编辑器即可对该文件进行编辑，使用markdown的格式和hexo提供的标签编辑文章</p>
+<p>-默认生成内容有title,date,tags等<br>-使用more标签可以隐藏文章部分内容</p>
+<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>主题：<a href="https://github.com/pinggod/hexo-theme-jekyll" target="_blank" rel="external">hexo-theme-jekyll</a>,<br>    <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a></p>
 <p>-首先下载主题,放到themes<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$cd /f/Workspaces/hexo/ #进入工作空间</div><div class="line">$git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure></p>
-<p>-修改_config.yml中的theme: landspace将改为theme:yilia，再执行hexo g来生成</p>
+<p>-修改_config.yml中的theme: landspace，将其改为theme:yilia，再执行hexo g来生成</p>
 <h3 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h3><p>-ssh key已配置好<br>-安装hexo-deployer-git<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 <p>再配置_config.yml中的deploy部分：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: &lt;repository url&gt;</div><div class="line">  branch: [branch]</div><div class="line">  message: [message]</div></pre></td></tr></table></figure></p>
 <p>-<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external">部署</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$hexo deploy</div></pre></td></tr></table></figure></p>
-<h3 id="浏览效果"><a href="#浏览效果" class="headerlink" title="浏览效果"></a>浏览效果</h3><p>打开浏览器，输入地址：<name>.github.io</name></p>
+<h3 id="浏览效果"><a href="#浏览效果" class="headerlink" title="浏览效果"></a>浏览效果</h3><p>打开浏览器，输入地址：name.github.io</p>
 <h2 id="资料与参考"><a href="#资料与参考" class="headerlink" title="资料与参考"></a>资料与参考</h2><p><a href="www.hexo.io">www.hexo.io</a><br><a href="http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="external">http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/06/hexo-github搭建个人博客/" data-id="cj16dasri00004s95c0knz1zr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/06/hexo-github搭建个人博客/" data-id="cj16dvd0y00027495x5da2lbz" class="article-share-link">Share</a>
       
       
     </footer>
